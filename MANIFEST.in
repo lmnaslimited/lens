@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include lens *.css
+recursive-include lens *.csv
+recursive-include lens *.html
+recursive-include lens *.ico
+recursive-include lens *.js
+recursive-include lens *.json
+recursive-include lens *.md
+recursive-include lens *.png
+recursive-include lens *.py
+recursive-include lens *.svg
+recursive-include lens *.txt
+recursive-exclude lens *.pyc
