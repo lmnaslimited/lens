@@ -1,0 +1,57 @@
+{
+ "actions": [
+  {
+   "action": "lens.indiamart_api.sync",
+   "action_type": "Server Action",
+   "label": "Sync"
+  }
+ ],
+ "allow_rename": 1,
+ "creation": "2022-08-06 19:08:48.610664",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "crm_key",
+  "api_url"
+ ],
+ "fields": [
+  {
+   "fieldname": "crm_key",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "CRM Key",
+   "reqd": 1
+  },
+  {
+   "default": "https://mapi.indiamart.com/wservce/crm/crmListing/v2",
+   "fieldname": "api_url",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "API URL",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2022-08-07 12:02:52.091023",
+ "modified_by": "Administrator",
+ "module": "LENS",
+ "name": "Indiamart Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

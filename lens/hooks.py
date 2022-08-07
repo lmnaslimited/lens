@@ -123,6 +123,13 @@ app_license = "MIT"
 # 		"lens.tasks.monthly"
 # 	]
 # }
+scheduler_events = {
+	"cron": {
+       		"0/10 * * * *": [
+            		"lens.indiamart_api.sync"
+        		]
+		}
+}
 
 # Testing
 # -------
