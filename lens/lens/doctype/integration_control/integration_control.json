@@ -1,34 +1,47 @@
 {
- "actions": [],
+ "actions": [
+  {
+   "action": "lens.integration_doctype_api.sync",
+   "action_type": "Server Action",
+   "label": "Sync"
+  }
+ ],
  "allow_rename": 1,
+ "autoname": "field:integration_app",
  "creation": "2022-08-07 09:07:49.065306",
  "doctype": "DocType",
  "document_type": "Setup",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "integration_name",
-  "last_run_time"
+  "integration_app",
+  "section_break_4",
+  "integration_doctype"
  ],
  "fields": [
   {
-   "fieldname": "integration_name",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "label": "Integration Name",
-   "options": "DocType",
-   "reqd": 1,
-   "unique": 1
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
   },
   {
-   "fieldname": "last_run_time",
-   "fieldtype": "Datetime",
-   "label": "Last Run Time"
+   "fieldname": "integration_doctype",
+   "fieldtype": "Table",
+   "label": "Integration Doctype",
+   "options": "Integration Doctype"
+  },
+  {
+   "fieldname": "integration_app",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Integration App",
+   "options": "Integration App",
+   "reqd": 1,
+   "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-07 09:31:55.641632",
+ "modified": "2022-08-09 12:55:21.645632",
  "modified_by": "Administrator",
  "module": "LENS",
  "name": "Integration Control",
@@ -49,5 +62,5 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "title_field": "integration_name"
+ "title_field": "integration_app"
 }
