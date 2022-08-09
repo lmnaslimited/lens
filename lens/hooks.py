@@ -143,8 +143,8 @@ fixtures = [
 # }
 scheduler_events = {
 	"cron": {
-       		"0/10 * * * *": [
-            		"lens.indiamart_api.sync"
+       		"0/15 * * * *": [
+            		"lens.integration_doctype_api.sync"
         		]
 		}
 }
