@@ -8,7 +8,25 @@ app_icon = "octicon octicon-file-directory"
 app_color = "grey"
 app_email = "hello@lmnas.com"
 app_license = "MIT"
-fixtures = ["Custom Field"]
+fixtures = [
+    {
+        "doctype": "Custom Field",
+        "filters": [
+            [
+                "name",
+                "in",
+                (
+                   
+                    "Lead-indiamart_id",
+                ),
+            ]
+        ],
+    },
+    {
+        "doctype": "Lead Source",
+        "filters": [["name", "in", ("IndiaMART")]],
+    },
+]
 # Includes in <head>
 # ------------------
 
